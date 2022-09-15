@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                cat >> this is a declarative jenkinsfile
+                echo "this is a declarative jenkinsfile testfile" >> testfile
              }
         }
         stage ('build') {
