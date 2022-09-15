@@ -15,6 +15,9 @@ pipeline {
         stage('deploy') {
             steps {
                 cat >> this is a declarative jenkinsfile
+        stage ('build') {
+            steps {
+                display
             }
         }
     }
