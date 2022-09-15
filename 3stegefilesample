@@ -1,5 +1,5 @@
 pipeline {
-    agent {lubuntu-01-r}
+    agent any
     stages {
         stage('check') {
             steps {
