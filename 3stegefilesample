@@ -19,7 +19,7 @@ pipeline {
         }
         stage ('build') {
             steps {
-                display
+                echo "pipeline run correctly" >> pipeline
             }
         }
     }
