@@ -1,0 +1,21 @@
+pipeline {
+    agent lubuntu-01-r
+    stages {
+        stage('check') {
+            steps {
+                mkdir check
+                touch testfile
+            }
+        }
+        stage('Test') {
+            steps {
+                cat testfile
+            }
+        }
+        stage('deploy') {
+            steps {
+                cat >> this is a declarative jenkinsfile
+            }
+        }
+    }
+}
