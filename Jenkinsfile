@@ -4,13 +4,14 @@ pipeline {
     stages {
         stage('check') {
             steps {
-                mkdir check
+                mkdir test
+                cd test
                 touch testfile
             }
         }
         stage('Test') {
             steps {
-                cat testfile
+                cat test/testfile
             }
         }
         stage('deploy') {
